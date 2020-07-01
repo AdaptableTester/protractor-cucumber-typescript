@@ -12,7 +12,7 @@ Welcome to our Star Wars Search web application. Our app is for the Star Wars en
   - [Search for planet](#search-for-planet)
   - [Additional flows](#additional-flows)
 - [Installation](#Installation)
-- [Run the application](#run-the-app)
+- [Run the application](#run-the-application)
 - [Run the tests](#Installation)
 - [Additional info](#additional-info)
 
