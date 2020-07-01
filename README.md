@@ -1,35 +1,63 @@
-# Requirements & Background
+# FedEx Frontend QA - Javascript Test Assessment
 
-## Helpful Tips
+Currently the project works with **NODEJS 10 LTS** environment. Please make sure you MAC/PC has a 10.x node version installed. (https://nodejs.org/dist/latest-v10.x/). You can also try NODEJS 12 LTS as an experiment but support has not been verified. 
 
-* Choose an IDE to your liking (We recommend the Free Micrsoft Visual Studio Code)
-* Configure your IDE with a cucumber plugin to locate the feature steps for the cucumber scenario’s to speed up your work
-* It should not take more than an three to four hours to demonstrate your skills with this project
-* If you get stuck (especially with the app itself or installations), please contact us
-* We want to assess your way of working on the code. The feature that is included in the source is to get you started but __by no means correct / complete /the best way__. Refactor and restructure anything in the e2e folder if you think that works better. Please explain choices you make so we can assess your comprehension and skill with the framework
-* When you `npm start` the application know that `npm run e2e` will start it again (and fail). So kill a running application if startup fails.
+Run ```node -v``` in a terminal to see which version of NodeJS you have
 
-Please provide your documentation in the [ASSESSMENT-SOLUTION.MD](./ASSESSMENT-SOLUTION.MD) file.
+# App specs
 
-## Assignment 
+Welcome to our Star Wars Search web application. Our app is for the Star Wars enthusiasts who would like to find some information for some of their favorite characters and planets.
 
-### Start
+The application is in this repository in the `src` folder. Feel free to browse or modify the code if you need to. 
 
-1. Using the instructions attached to the project [README.MD](./README.md), configure your local environment
-2. Complete the above setup so that you can execute the existing scenario without problems `npm run e2e` should have one passing feature file
+So, what you should expect when using this app are the following:
 
-### The coding
+## Main features
 
-3. In the [README.MD](./README.md) file, you will see the APP Specs, this will be the basis for you test cases. Please read these carefully.
-4. Write test automation scripts using Cucumber and Protractor (BDD approach) that would document the user stories, verify the application features, whilst also including comments on code you write
-5. Please report any bugs or anomalies you will find
-6. Also note that the sourcecode of the app is running on your machine so you have full access to make your test code as efficient as possible
+### Search for character (person)
+*	When you search for **a character** and it’s a valid one, then you should be able to see his / her “Gender”, “Birth year”, “Eye color” and “Skin color”.
+*	When you search for a character and it’s not a valid one, then you should be able to see “Not found” in the results.
 
-### Done? -> The feedback
+### Search for planet
+*	When you search for **a planet** and it’s a valid one, then you should be able to see its “Population”, “Climate” and “Gravity”.
+*	When you search for a planet and it’s not a valid one, then you should be able to see “Not found” in the results.
 
-When the assessment is completed and your tests run and show your skills, push your work to GitHub and provide us a link of your branch. Alternatively zip your project (exclude node_modules folder please) and email it back to us
+### Additional flows
+*	When you search for either a character or a planet and you get one or more results for it, clear the “Search form” and hit the Search button again, you should then get an empty result list (previous search results are removed).
+*	You can search for results by clicking the “Search” button or by pressing “enter” on the search field.
+*	When for example you have searched for a full planet name and you’ve got results, if you switch to People and search for the same thing (that has no matching people based on a partial name), you should get a “Not found” in the results.
+*	You can have more than one results, for both Planets and Names (partial matching)
 
-## Important Notice
+## Requirements
+* **NodeJS 10**
+* Chrome browser
+* Tested on Mac OS X
 
-* By doing this assignment, you are bound by our confidentiality and data protection policies. That means that you are not allowed to discuss or share anything to any third party (public internet, physical person, company, etc.)
-* You most probably will be asked to answer various questions around your deliverables of the assignment afterwards
+## Installation
+
+```
+npm install 
+```
+
+## Run
+
+Run `ng serve` and navigate to `http://localhost:4200/`. 
+You can search by people and planets there.
+To search by people use `Luke Skywalker`, `Leia Organa` or `r2`. Use `Darth` to see multiple results.  
+To search by search by planets use `Alderaan`, `Hoth`.
+ 
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` or `npm run e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Backend service that is used
+The actual backend we're hitting is [SWAPI (Star Wars API)](https://swapi.dev/documentation)
