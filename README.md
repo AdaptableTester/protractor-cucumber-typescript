@@ -1,22 +1,6 @@
 # Requirements & Background
 
-## Introduction
-
-This is the FedEx Digital International QA Engineer assessment. The purpose is to give us
-insight in your technical abilities, development approach and general technical
-working habits. We view your performance on this assessment as indicative of
-the work you will deliver as a QA Engineer.
- 
-We ask you to treat this assessment as confidential so we can apply the scenarios to
-future candidates also. Your solution will not be kept after the assessment and
-will not be used by FedEx Digital International.
-
-We love to challenge our candidates, so we kindly ask you to complete the below assignment
-by the communicated deadline.
-
-Good luck!
-
-## Tips
+## Helpful Tips
 
 * Choose an IDE to your liking (We recommend the Free Micrsoft Visual Studio Code)
 * Configure your IDE with a cucumber plugin to locate the feature steps for the cucumber scenario’s to speed up your work
