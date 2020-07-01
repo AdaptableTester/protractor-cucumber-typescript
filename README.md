@@ -1,28 +1,28 @@
-# FedEx Frontend QA - Javascript Test Assessment
+# Frontend QA - Javascript Test Assessment
 
-- Currently the project works with **NODEJS 10 LTS** environment. 
-- Please make sure you MAC/PC has a 10.x node version installed. (https://nodejs.org/dist/latest-v10.x/). 
-- You can also try NODEJS 12 LTS as an experiment but support has not been verified. 
-- Run ```node -v``` in a terminal to see which version of NodeJS you have
+Welcome to our Star Wars Search web application. Our app is for the Star Wars enthusiasts who would like to find some information for some of their favorite characters and planets.
 
 # App specs
-
-Welcome to our Star Wars Search web application. Our app is for the Star Wars enthusiasts who would like to find some information for some of their favorite characters and planets. The application is in this repository in the `src` folder.
+ 
+ The application is in this repository in the `src` folder.
+ 
 - [Requirements](#Requirements)
 - [Main features](#Main-features)
   - [Search for character or person](#search-for-character-or-person)
   - [Search for planet](#search-for-planet)
-  - [Additional flows](#additional-flows
+  - [Additional flows](#additional-flows)
 - [Installation](#Installation)
 - [Run the application](#run-the-app)
 - [Run the tests](#Installation)
 - [Additional info](#additional-info)
 
-
 ## Requirements
-  - * **NodeJS 10**
-  - * Chrome browser
-  - * Tested on Mac OS X
+The application is in this repository in the `src` folder.
+- Currently the project works with **NODEJS 10 LTS** environment. 
+- Run ```node -v``` in a terminal to see which version of NodeJS you have
+- Please make sure you MAC/PC has a 10.x node version installed. (https://nodejs.org/dist/latest-v10.x/). 
+- Tested on Mac OS X using Chrome browser
+- You can also try NODEJS 12 LTS as an experiment but support has not been verified. 
 
 ## Main features
 
