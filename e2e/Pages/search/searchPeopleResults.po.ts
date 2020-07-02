@@ -1,4 +1,4 @@
-import { element, by, $$, $ } from 'protractor';
+import { browser, element, by, $$, $ } from 'protractor';
 
 const characterDetails = `.col-sm-10`;
 

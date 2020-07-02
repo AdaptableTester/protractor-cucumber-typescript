@@ -1,8 +1,9 @@
-// Protractor configuration file, see link for more information
-// https://github.com/angular/protractor/blob/master/lib/config.ts
-
 exports.config = {
+
   debug: false,
+  // SK: Simple to get up and running - but use Selenium Standalone/remote server for cross browsers
+  directConnect: true,
+
   allScriptsTimeout: 11000,
   specs: [
     './e2e/**/*.feature'
@@ -10,7 +11,7 @@ exports.config = {
   capabilities: {
     'browserName': 'chrome'
   },
-  directConnect: true,
+
   allScriptsTimeout: 45000,
   baseUrl: 'http://localhost:4200/',
   framework: 'custom',
