@@ -1,34 +1,30 @@
-import { browser, element, by, $$, $ } from 'protractor';
+import { element, by, $$, $ } from 'protractor';
 
-const characterDetails = `.col-sm-10`;
+export default class SearchPlanetPage {
+    planetDetails = `.col-sm-10`;
 
-module.exports = {
-    get TxtBxInput() {
+     TxtBxInput() {
         return element(by.id('query'));
-    },
-    get BtnSearch() {
+    }
+     BtnSearch() {
         return element(by.css('button'));
-    },
-    get ElePlanetName() {
+    }
+     ElePlanetName() {
         return element(by.css('app-planet h6'));
-    },
-    get EleCharacterGender() {
-        return element($$(characterDetails)[0]);
-    },
-    get EleCharacterBirthYear() {
-        return element($$(characterDetails)[1]);
-    },
-    get EleCharacterEyeColor() {
-        return element($$(characterDetails)[2]);
-    },
-    get EleCharacterSkinColor() {
-        return element($$(characterDetails)[3]);
-    },
-    
-    get RdioBtnPlanets() {
+    }
+    ElePlanetPopulation() {
+        return element($$(this.planetDetails)[0]);
+    }
+     ElePlanetClimate() {
+        return element($$(this.planetDetails)[1]);
+    }
+    ElePlanetGravity() {
+        return element($$(this.planetDetails)[2]);
+    }
+    RdioBtnPlanets() {
         return element($(`input[id="planets"]`));
-    },
-    get RdioBtnPeople() {
+    }
+    RdioBtnPeople() {
         return element($(`input[id="people"]`));
     }
 };

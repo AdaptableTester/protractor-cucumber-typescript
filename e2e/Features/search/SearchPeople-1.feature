@@ -9,9 +9,9 @@ And I am on the landing page of the site
    
 Scenario Outline: Perform Search for a Character
     Given I choose the People option on the page 
-    When I set a '<characterName>' in the input field
+    When I set a `characterName` in the input field
 	And I submit my search
-	Then I expect the related results include '<Gender>', '<BirthYear>', '<EyeColor>', '<SkinColor>'
+	Then I expect the related results include `Gender`, `BirthYear`, `EyeColor`, `SkinColor`
 	
 
 Examples:

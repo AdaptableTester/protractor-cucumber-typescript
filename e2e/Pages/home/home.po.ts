@@ -1,16 +1,21 @@
-import { browser, element, by, $$, $ } from 'protractor';
+import { element, by, $ } from 'protractor';
 
-module.exports = {
-    get TxtBxInput() {
+export default class HomePage {
+    TxtBxInput() {
         return element(by.id('query'));
-    },
-    get BtnSearch() {
+    }
+
+    BtnSearch() {
         return element(by.css('button'));
-    },
-    get RdioBtnPlanets() {
+    }
+
+    RdioBtnPlanets() {
         return element($(`input[id="planets"]`));
-    },
-    get RdioBtnPeople() {
+    }
+
+    RdioBtnPeople() {
         return element($(`input[id="people"]`));
     }
-};
+}
+    
+

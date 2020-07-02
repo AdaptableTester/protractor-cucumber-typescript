@@ -1,11 +1,11 @@
-const { Given, When, Then } = require('cucumber');
-const { browser } = require('protractor');
+/* import { Given, When, Then } from 'cucumber';
 const chai = require('chai');
+import { browser } from 'protractor';
 chai.use(require('chai-as-promised'));
+const {setDefaultTimeout} = require('cucumber');
+setDefaultTimeout(60 * 1000);
 
-
-
-const searchFormPO = require('../page-objects/search-form.po');
+const searchFormPO = require('../../Pages/search/search-form.po');
 
 Given('I navigate to {string}', { timeout: 60 * 1000 }, async (string) => {
     await browser.get('http://' + string + ':4200/');
@@ -22,3 +22,4 @@ Then('I see Lukes details', { timeout: 60 * 1000 }, async () => {
     await chai.expect(searchFormPO.firstCharacterName.getAttribute('innerText'))
         .to.eventually.contain('Skywalker');
 });
+ */

@@ -11,7 +11,7 @@ Background:
    
 Scenario Outline: Perform Search for a Planet name that is not valid
     Given I choose the Planets option on the page 
-    And I set a '<planetInvalidName>' in the input field
+    And I set a `planetInvalidName` in the input field
     Then I see a Not Found message
 	
 	Examples:

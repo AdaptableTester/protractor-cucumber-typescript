@@ -11,7 +11,7 @@ Scenario: When you search for a character and it’s not a valid one, then you s
 Scenario Outline: Perform Search with a Character name that did not feature in Star Wars
 
     Given I choose the People option on the page 
-    When I set a '<characterInvalidName>' in the input field
+    When I set a `characterInvalidName` in the input field
     Then I see a Not Found message
 	
 	Examples:
