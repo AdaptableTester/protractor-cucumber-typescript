@@ -5,6 +5,7 @@ exports.config = {
   debug: false,
   // SK1: for direct conn using driver browsers
   directConnect: true,
+  
 
   allScriptsTimeout: 11000,
   specs: [
