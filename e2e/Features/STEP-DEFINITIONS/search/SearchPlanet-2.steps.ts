@@ -11,7 +11,7 @@ const homePage: HomePage = new HomePage();
     return true;
   });
 
-  When(/^I set a "(.*)" in the input field$/, async function(param1) {
+  When(/^I set a "(.*)" in the input field$/, async function() {
     return true;
   });
 

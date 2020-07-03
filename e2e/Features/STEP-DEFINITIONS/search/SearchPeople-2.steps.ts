@@ -22,7 +22,7 @@ const homePage: HomePage = new HomePage();
       let gender = await homePage.EleCharacterGender().getText();
       let birthYear = await homePage.EleCharacterBirthYear().getText();
       let eyeColor = await homePage.EleCharacterEyeColor().getText();
-      let skinColor = await homepage.EleCharacterEyeColor().getText();
+      let skinColor = await homePage.EleCharacterSkinColor().getText();
       await chai.expect(gender).to.eventually.be(g);
       await chai.expect(birthYear).to.eventually.be(bY);
       await chai.expect(eyeColor).to.eventually.be(eC);

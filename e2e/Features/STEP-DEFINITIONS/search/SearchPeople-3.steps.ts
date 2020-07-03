@@ -11,7 +11,7 @@ const homePage: HomePage = new HomePage();
     return await homePage.RdioBtnPeople().click();
   });
   
-  When(/^I set a "(.*)" in the input field$/, function(nonStarWarsArtistName) {
+  When(/^I set a "(.*)" in the input field$/, async function(nonStarWarsArtistName) {
     return await homePage.TxtBxInput().sendKeys(nonStarWarsArtistName);
   });
 
@@ -19,7 +19,7 @@ const homePage: HomePage = new HomePage();
     return await homePage.BtnSearch().click();
   });
 
-  Then(/^I see a Not Found message$/, function() {
-    await homePage.
-  });
-});
+ // Then(/^I see a Not Found message$/, function() {
+//    await homePage.
+ // });
+
