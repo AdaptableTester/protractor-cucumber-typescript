@@ -12,7 +12,6 @@ Given('I navigate to the {string}', async (string) => {
 });
 
 
-
 Then('I should see the page title', async () => {
     await chai.expect(browser.getTitle())
         .to.eventually.includes('TntAssignment');

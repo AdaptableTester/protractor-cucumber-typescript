@@ -12,7 +12,7 @@ Background:
 Scenario Outline: Perform Search for a Planet name that is not valid
     Given I choose the Planets option on the page 
     When I set a "<planetInvalidName>" in the input field
-    And I submit my search
+    When I submit my search
     Then I see a Not Found message
 	
 	Examples:

@@ -6,18 +6,20 @@ setDefaultTimeout(60 * 1000);
 import HomePage from '../../../PAGES/home/home.po';
 const homePage: HomePage = new HomePage();
 
-defineSupportCode(function ({Given, When, Then}) {
-  Given(/^I choose the Planets option on the page$/, function() {
+
+  Given(/^I choose the Planets option on the page$/, async function() {
     return true;
   });
-  When(/^I set a "(.*)" in the input field$/, function(param1) {
+
+  When(/^I set a "(.*)" in the input field$/, async function(param1) {
     return true;
   });
-  And(/^I submit my search$/, async function() {
+
+  When(/^I submit my search$/, async function() {
     return await homePage.BtnSearch().click();
   });
 
-  Then(/^I see a Not Found message$/, function() {
+  Then(/^I see a Not Found message$/, async function() {
     return true;
   });
-});
+

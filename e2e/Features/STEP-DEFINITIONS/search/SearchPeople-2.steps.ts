@@ -9,10 +9,12 @@ const homePage: HomePage = new HomePage();
   Given(/^I choose the People option on the page$/, async function() {
     return await homePage.RdioBtnPeople().click();
   });
-  When(/^I set a "(.*)" in the input field$/, async function(param1) {
-    return await homePage.TxtBxInput().sendKeys(param1);
+
+  When(/^I set a "(.*)" in the input field$/, async function(characterPartName) {
+    return await homePage.TxtBxInput().sendKeys(characterPartName);
   });
-  And(/^I submit my search$/, async function() {
+
+  When(/^I submit my search$/, async function() {
     return await homePage.BtnSearch().click();
   });
 
@@ -27,7 +29,9 @@ const homePage: HomePage = new HomePage();
       await chai.expect(skinColor).to.eventually.be(sC);
   });
 
-  And(/^the full name of the person is "(.*)"$/, function(param1) {
-    return true;
-  });
+  // Then(/^the full name of the person is "(.*)"$/, async function(fullName) {
+  //   await homePage.EleCharacterName().getText();
+  //   await chai.expect
+
+  // });
 

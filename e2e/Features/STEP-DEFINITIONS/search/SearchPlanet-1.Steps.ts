@@ -16,7 +16,7 @@ const homePage: HomePage = new HomePage();
     return await homePage.TxtBxInput().sendKeys(param1);
   });
 
-  And(/^I submit my search$/, async function() {
+  When(/^I submit my search$/, async function() {
     return await homePage.BtnSearch().click();
   });
 
