@@ -1,4 +1,4 @@
-# Frontend QA - Javascript Test Assessment
+# QA Test Assessment
 
 Welcome to our Star Wars Search web application. Our app is for the Star Wars enthusiasts who would like to find some information for some of their favorite characters and planets.
 
